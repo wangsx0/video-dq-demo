@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <title>视频的题头</title>
+    <title>视频播放</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -24,10 +24,9 @@
     </style>
 </head>
 <body>
-    <!-- playsinline：手机内嵌播放，不自动全屏；#t=0.001 解决黑屏首帧 -->
     <video controls playsinline preload="metadata">
-        <source src="./video.mp4#t=0.001" type="video/mp4">
-        浏览器不支持HTML视频，请直接<a href="./video.mp4">点击这里下载视频</a>
+        <source src="https://cdn.jsdelivr.net/gh/wangsx0/video-dq-demo@master/video.mp4#t=0.001" type="video/mp4">
+        浏览器不支持HTML视频，请<a href="https://cdn.jsdelivr.net/gh/wangsx0/video-dq-demo@master/video.mp4">点击下载</a>
     </video>
 </body>
 </html>
