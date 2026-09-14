@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <!-- 这里修改网页标题（视频题头） -->
-    <title>视频的题头</title>
+    <title>视频播放</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -19,17 +18,15 @@
             align-items: center;
         }
         video {
-            /* 视频最大宽度，不会超出手机屏幕 */
             max-width: 100%;
             max-height: 100vh;
         }
     </style>
 </head>
 <body>
-    <!-- src 替换成你mp4的raw地址 -->
-    <video controls>
-        <source src="https://raw.githubusercontent.com/你的用户名/video-dq-demo/main/video.mp4" type="video/mp4">
-        你的浏览器不支持视频播放
+    <video controls playsinline preload="metadata">
+        <source src="./video.mp4" type="video/mp4">
+        浏览器不支持HTML视频，请<a href="./video.mp4">点击下载视频</a>
     </video>
 </body>
 </html>
